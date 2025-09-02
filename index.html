@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор уборки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <h1>Калькулятор уборки</h1>
+      <div class="form-section">
+        <label>Общая площадь (м²): <input type="number" id="area" value="0"></label>
+        <label>Окна (м²): <input type="number" id="windows" value="0"></label>
+
+        <h2>Техника</h2>
+        <label>Холодильник: <input type="number" id="fridge" value="0"></label>
+        <label>Духовка+плита+вытяжка: <input type="number" id="oven" value="0"></label>
+        <label>Микроволновка: <input type="number" id="microwave" value="0"></label>
+
+        <h2>Мягкая мебель</h2>
+        <label>Стул: <input type="number" id="chair" value="0"></label>
+        <label>Кресло: <input type="number" id="armchair" value="0"></label>
+        <label>Диван детский: <input type="number" id="sofa_small" value="0"></label>
+        <label>Диван 3-х местный: <input type="number" id="sofa_large" value="0"></label>
+        <label>Диван угловой короткий: <input type="number" id="sofa_corner_short" value="0"></label>
+        <label>Диван угловой длинный: <input type="number" id="sofa_corner_long" value="0"></label>
+        <label>Кухонный уголок: <input type="number" id="kitchen_sofa" value="0"></label>
+        <label>Матрас (1 сторона): <input type="number" id="mattress1" value="0"></label>
+        <label>Матрас (2 стороны): <input type="number" id="mattress2" value="0"></label>
+
+        <h2>Работа и условия</h2>
+        <label>Работники (кол-во): <input type="number" id="workers" value="2"></label>
+        <label>Тариф/день (лей): <input type="number" id="tariff" value="700"></label>
+        <label>Маржа (%): <input type="number" id="margin" value="20"></label>
+        <label>Скидка (%): <input type="number" id="discount" value="0"></label>
+
+        <button onclick="calculate()">Рассчитать</button>
+      </div>
+
+      <div class="result-section">
+        <h2>Итог</h2>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
