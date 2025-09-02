@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор уборки (Админ)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор клининга (Админ)</h1>
+
+        <label>Площадь (м²): <input type="number" id="area" value="0"></label>
+        <label>Окна (м²): <input type="number" id="windows" value="0"></label>
+
+        <h2>Кухонная техника</h2>
+        <label><input type="checkbox" value="Холодильник"> Холодильник (150–250 лей)</label>
+        <label><input type="checkbox" value="Духовка"> Духовка + плита + вытяжка (200–350 лей)</label>
+        <label><input type="checkbox" value="Микроволновка"> Микроволновка (50–100 лей)</label>
+
+        <h2>Мягкая мебель</h2>
+        <label><input type="checkbox" value="Стул"> Стул (50–100 лей)</label>
+        <label><input type="checkbox" value="Кресло"> Кресло (150–200 лей)</label>
+        <label><input type="checkbox" value="Диван детский"> Диван детский (400–500 лей)</label>
+        <label><input type="checkbox" value="Диван 3-х местный"> Диван 3-х местный (600–700 лей)</label>
+        <label><input type="checkbox" value="Диван угловой короткий"> Диван угловой короткий (700–900 лей)</label>
+        <label><input type="checkbox" value="Диван угловой длинный"> Диван угловой длинный (900–1100 лей)</label>
+        <label><input type="checkbox" value="Кухонный уголок"> Кухонный уголок (600–800 лей)</label>
+        <label><input type="checkbox" value="Матрас1"> Матрас 1 сторона (400 лей)</label>
+        <label><input type="checkbox" value="Матрас2"> Матрас 2 стороны (600 лей)</label>
+
+        <h2>Дополнительно</h2>
+        <label>Работники (700 лей/чел): <input type="number" id="workers" value="0"></label>
+        <label>Маржа (%): <input type="number" id="margin" value="20"></label>
+        <label>Скидка (%): <input type="number" id="discount" value="0"></label>
+
+        <button onclick="calculate()">Рассчитать</button>
+
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <div id="details"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
